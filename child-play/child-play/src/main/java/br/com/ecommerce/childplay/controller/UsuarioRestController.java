@@ -12,17 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/list/usuario")
+@RequestMapping("/usuario")
 public class UsuarioRestController {
 
-    @GetMapping
+    @GetMapping("/list-usuario")
     public ResponseEntity<List<Usuario>> litar() throws ClassNotFoundException, SQLException{
         UsuarioService service = new UsuarioService();
         List<Usuario> lista = service.listar();
-        
-        for (Usuario usuario : lista) {
-            System.out.println("nome: "+usuario.getNome());
-        }
         return ResponseEntity.ok(lista);
     }
  
