@@ -8,15 +8,6 @@ public class Usuario {
     private String senha;
     private String funcao;
     private boolean enable;
-    private String staffName[];
-
-    public String[] getStaffName() {
-        return staffName;
-    }
-
-    public void setStaffName(String[] staffName) {
-        this.staffName = staffName;
-    }
 
     public int getIdUsuario() {
         return idUsuario;

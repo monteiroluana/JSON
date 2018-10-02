@@ -1,4 +1,4 @@
-package br.com.ecommerce.childPlay;
+package br.com.ecommerce.childplay;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
